@@ -1,0 +1,5 @@
+<%if session[:user_name]%>
+    <%News.find(session[:user_name].unread_news(session[:user_name].id)).reverse[0..5].each do |a|%>
+        <li><a href="/show/<%=a.id%>"><%= a.data%></a></li>
+    <%end%>
+<%end%>

@@ -1,0 +1,57 @@
+
+<script type="text/javascript" >
+
+</script>
+
+
+
+
+    <div class="main_body">
+      <%= form_for(@news) do |f| %>
+          <% if @news.errors.any? %>
+              <div id="error_explanation">
+                <h2><%= pluralize(@news.errors.count, "error") %> prohibited this news from being saved:</h2>
+
+                <ul>
+                  <% @news.errors.full_messages.each do |msg| %>
+                      <li><%= msg %></li>
+                  <% end %>
+                </ul>
+              </div>
+          <% end %>
+<%if session[:user_name].blank?%>
+          <div class="new_field">
+            <%= f.label :name %><br />
+            <%= f.text_field :name %>
+          </div>
+              <%end%>
+          <div class="new_field">
+           <!-- <%= f.label :data %>--><br />
+            <%= f.text_area :data %>
+          </div>
+          <div class="new_actions">
+            <%= f.submit %>
+          </div>
+      <% end %>
+
+      <div class="footer">
+
+
+      </div>
+    </div>
+
+<%=link_to 'Show Comments', '/comments'%> |
+<%=link_to 'Show All News', '/news'%>
+
+
+<style>
+
+
+</style>
+
+
+
+
+
+
+

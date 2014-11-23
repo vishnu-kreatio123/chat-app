@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NewsApp</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <%= javascript_include_tag :defaults, "http://localhost:9292/faye.js" %>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="menu">
+      <h2>News Bulletin App</h2>
+   <!--   <div class="circleBase type1"></div> -->
+      <%if session[:user_name]%>
+          <p>Welcome!! You are logged in.</p>
+      <%end%>
+    </div>
+    <!--<ul id="nav">-->
+      <!--<li><a href="#">Link1</a></li>-->
+      <!--<li><a href="#">Link2</a></li>-->
+      <!--<li id="notification_li">-->
+        <!-- <a href="#" id="notificationLink">Notifications</a>-->
+      <!--<li id="notification_li">-->
+
+
+        <!--<div id="notificationContainer">-->
+          <!--<div id="notificationTitle">Notifications</div>-->
+    <div class="counter"><span id="notification_count"><%=session[:user_name].unread_news(session[:user_name].id).count if session[:user_name]%></span>
+      <a href="#" id="notificationLink">New Notifications</a></div>
+          <ul id="notification_ajax">
+
+            <%if session[:user_name]%>
+                <%News.find(session[:user_name].unread_news(session[:user_name].id)).reverse[0..5].each do |a|%>
+                    <li><a href="/show/<%=a.id%>"><%= a.data%></a></li>
+                <%end%>
+            <%end%>
+            <li><a href="/news">See All</a></li>
+          </ul>
+        <!--</div>-->
+
+      <!--</li>-->
+      <!--</li>-->
+    <!--</ul>-->
+<%= yield %>
+</div>
+    </div>
+</body>
+</html>

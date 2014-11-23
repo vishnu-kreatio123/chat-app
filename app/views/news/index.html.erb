@@ -1,0 +1,25 @@
+<div class="test-scroll">
+<table>
+  <tr>
+    <th>News Posted By</th>
+    <th>News</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @news.each do |news| %>
+  <tr>
+    <td><%= news.name %></td>
+    <td><%= news.data %></td>
+    <td><%= link_to 'Show', news %></td>
+    <td><%= link_to 'Edit', edit_news_path(news) %></td>
+    <td><%= link_to("Comment on this News", { :controller => "/comments", :action=>'new', :user_id => session[:user_name].id,:message_id=>news.id}) %>
+    </td>
+  </tr>
+<% end %>
+</table>
+</div>
+<br />
+
+<%= link_to 'New News', new_news_path %>

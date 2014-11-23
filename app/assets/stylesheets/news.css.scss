@@ -1,0 +1,60 @@
+// Place all the styles related to the news controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{margin: 0;padding: 0;transition:0.5s ease;}
+.container{height: 700px;
+//  background-image: url("Background(1).jpg");
+}
+img {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+.header{background-color: #000000}
+.main_body h2{height: 5px;}
+.menu h2 {
+  height: 32px;
+  padding-top: 100px;
+  text-align: center;
+}
+.type1 {
+  width: 50px;
+  height: 50px;
+  background: darkred;
+  border: 3px solid darkred;
+  float: right;
+}
+.circleBase {
+  border-radius: 50%;
+}
+.circleBase.type1 {
+  margin-top: -57px;
+}
+.menu p{float: left;margin-top: -20px;}
+
+.main_body {
+  text-align: center;
+}
+table {
+  margin-left: 380px;
+  margin-top: 57px;
+  text-align: center;
+}
+#notice{padding-top: 75px;}
+.field {
+  margin-left: 450px;
+  padding-top: 56px;
+}
+div.field, div.actions {
+  margin-bottom: 10px;
+  margin-left: 450px;
+}
+h1 {
+  margin-left: 450px;
+}
+.new_field {
+  padding-top: 56px;
+}
+.new_actions {
+  padding-top: 20px;
+}

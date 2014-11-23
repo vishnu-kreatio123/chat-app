@@ -1,0 +1,109 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1416737072.288497:@value{	I"length:EFiÄI"digest;
+F"%49863ed519f8c5ca477c04a8ba1b9ef0I"source;
+FI"Ä/* line 5, ../../app/assets/stylesheets/news.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease;
+}
+
+/* line 6, ../../app/assets/stylesheets/news.css.scss */
+.container {
+  height: 700px;
+}
+
+/* line 9, ../../app/assets/stylesheets/news.css.scss */
+img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+}
+
+/* line 13, ../../app/assets/stylesheets/news.css.scss */
+.header {
+  background-color: #000000;
+}
+
+/* line 14, ../../app/assets/stylesheets/news.css.scss */
+.main_body h2 {
+  height: 5px;
+}
+
+/* line 15, ../../app/assets/stylesheets/news.css.scss */
+.menu h2 {
+  height: 32px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+/* line 20, ../../app/assets/stylesheets/news.css.scss */
+.type1 {
+  width: 50px;
+  height: 50px;
+  background: darkred;
+  border: 3px solid darkred;
+  float: right;
+}
+
+/* line 27, ../../app/assets/stylesheets/news.css.scss */
+.circleBase {
+  border-radius: 50%;
+}
+
+/* line 30, ../../app/assets/stylesheets/news.css.scss */
+.circleBase.type1 {
+  margin-top: -57px;
+}
+
+/* line 33, ../../app/assets/stylesheets/news.css.scss */
+.menu p {
+  float: left;
+  margin-top: -20px;
+}
+
+/* line 35, ../../app/assets/stylesheets/news.css.scss */
+.main_body {
+  text-align: center;
+}
+
+/* line 38, ../../app/assets/stylesheets/news.css.scss */
+table {
+  margin-left: 380px;
+  margin-top: 57px;
+  text-align: center;
+}
+
+/* line 43, ../../app/assets/stylesheets/news.css.scss */
+#notice {
+  padding-top: 75px;
+}
+
+/* line 44, ../../app/assets/stylesheets/news.css.scss */
+.field {
+  margin-left: 450px;
+  padding-top: 56px;
+}
+
+/* line 48, ../../app/assets/stylesheets/news.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+  margin-left: 450px;
+}
+
+/* line 52, ../../app/assets/stylesheets/news.css.scss */
+h1 {
+  margin-left: 450px;
+}
+
+/* line 55, ../../app/assets/stylesheets/news.css.scss */
+.new_field {
+  padding-top: 56px;
+}
+
+/* line 58, ../../app/assets/stylesheets/news.css.scss */
+.new_actions {
+  padding-top: 20px;
+}
+;
+FI"_version;
+F"%8165b46795cc1ab424001f07c51a0089

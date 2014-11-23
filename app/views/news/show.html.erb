@@ -1,0 +1,17 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>News Posted By:</b>
+  <%= @news.name %>
+</p>
+
+<p>
+  <b>News:</b>
+  <%= @news.data %>
+</p>
+
+
+<%= link_to 'Edit', edit_news_path(@news) %> |
+<%= link_to 'Home', '/news/new' %> |
+<%= link_to("Comment on this News", { :controller => "/comments", :action=>'new', :user_id => session[:user_name].id,:message_id=>params[:id]}) %>

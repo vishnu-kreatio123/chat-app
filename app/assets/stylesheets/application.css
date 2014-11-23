@@ -1,0 +1,124 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require_tree . 
+*/
+
+#nav{list-style:none;margin: 0px;padding: 0px;float: right;}
+#nav li {
+    float: left;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight:bold;
+    margin-right: 67px;
+    margin-top: -15px;
+}
+#nav li a{color:#333333;text-decoration:none}
+#nav li a:hover{color:#006699;text-decoration:none}
+#notification_li
+{
+    position:relative
+}
+#notificationContainer
+{
+    background-color: #fff;
+    border: 1px solid rgba(100, 100, 100, .4);
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+    overflow: visible;
+    position: absolute;
+    top: 30px;
+    margin-left: -170px;
+    width: 400px;
+    z-index: 4000;
+    display: none; // Enable this after jquery implementation
+}
+// Popup Arrow
+   #notificationContainer:before {
+       content: '';
+       display: block;
+       position: absolute;
+       width: 0;
+       height: 0;
+       color: transparent;
+       border: 10px solid black;
+       border-color: transparent transparent white;
+       margin-top: -20px;
+       margin-left: 188px;
+   }
+#notificationTitle
+{
+    font-weight: bold;
+    padding: 8px;
+    font-size: 13px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1000;
+    width: 384px;
+    border-bottom: 1px solid #dddddd;
+}
+#notificationsBody
+{
+    padding: 33px 0px 0px 0px;
+    background-color: #e9eaed;
+    z-index: 2000;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    text-align: center;
+    /*min-height:300px;*/
+}
+#notificationFooter
+{
+    background-color: #e9eaed;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    font-size: 12px;
+    border-top: 1px solid #dddddd;
+}
+
+Notification Count Bubble
+Circle bubble for Notification count.
+#notification_count
+{
+    padding: 3px 7px 3px 7px;
+    background: #cc0000;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 77px;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    position: absolute;
+    margin-top: -11px;
+    font-size: 11px;
+}
+.header > p {
+    margin-left: 540px;
+}
+.header{height : 100px;}
+.header ul{list-style: outside none none;
+    margin-left: 1000px;
+    position: absolute;}
+#notification_ajax li {
+    border: 1px solid #c4c4c4;
+    line-height: 2em;
+    margin-bottom: 4px;
+    padding: 0 27px;
+}
+#notification_ajax li a{text-decoration: none;}
+#notification_ajax{display: none;}
+.counter {
+    margin-left: 1020px;
+}
+#notification_ajax {
+    margin-top: 10px;
+}
+.container{height: 700px;
+    background-image: '/Background(1).jpg';
+
+}
+td {
+    padding-left: 15px;
+}
